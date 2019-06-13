@@ -12,9 +12,11 @@
 		3621773122B26EAE0047FF5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3621772F22B26EAE0047FF5B /* Main.storyboard */; };
 		3621773322B26EAF0047FF5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3621773222B26EAF0047FF5B /* Assets.xcassets */; };
 		3621773622B26EAF0047FF5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3621773422B26EAF0047FF5B /* LaunchScreen.storyboard */; };
+		4E8438C4B61CF6BD31956B15 /* Pods_buttonSegmented.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3F959D1F22C6789CB15D67 /* Pods_buttonSegmented.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C3F959D1F22C6789CB15D67 /* Pods_buttonSegmented.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_buttonSegmented.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3621772822B26EAE0047FF5B /* buttonSegmented.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = buttonSegmented.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3621772B22B26EAE0047FF5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3621772D22B26EAE0047FF5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		3621773222B26EAF0047FF5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3621773522B26EAF0047FF5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3621773722B26EAF0047FF5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72B3D13DFADFAD0E147E04BA /* Pods-buttonSegmented.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-buttonSegmented.release.xcconfig"; path = "Target Support Files/Pods-buttonSegmented/Pods-buttonSegmented.release.xcconfig"; sourceTree = "<group>"; };
+		CB6B6620EA0293EBDFD5D036 /* Pods-buttonSegmented.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-buttonSegmented.debug.xcconfig"; path = "Target Support Files/Pods-buttonSegmented/Pods-buttonSegmented.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E8438C4B61CF6BD31956B15 /* Pods_buttonSegmented.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				3621772A22B26EAE0047FF5B /* buttonSegmented */,
 				3621772922B26EAE0047FF5B /* Products */,
+				5691AF88808010571D1719BD /* Pods */,
+				F78A7848907169120836AA46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = buttonSegmented;
 			sourceTree = "<group>";
 		};
+		5691AF88808010571D1719BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB6B6620EA0293EBDFD5D036 /* Pods-buttonSegmented.debug.xcconfig */,
+				72B3D13DFADFAD0E147E04BA /* Pods-buttonSegmented.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F78A7848907169120836AA46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C3F959D1F22C6789CB15D67 /* Pods_buttonSegmented.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3621773A22B26EAF0047FF5B /* Build configuration list for PBXNativeTarget "buttonSegmented" */;
 			buildPhases = (
+				DB53920C7CDA40614C1C8554 /* [CP] Check Pods Manifest.lock */,
 				3621772422B26EAE0047FF5B /* Sources */,
 				3621772522B26EAE0047FF5B /* Frameworks */,
 				3621772622B26EAE0047FF5B /* Resources */,
+				9E3827BFDC306328D5B7057D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9E3827BFDC306328D5B7057D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-buttonSegmented/Pods-buttonSegmented-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-buttonSegmented/Pods-buttonSegmented-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB53920C7CDA40614C1C8554 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-buttonSegmented-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3621772422B26EAE0047FF5B /* Sources */ = {
@@ -213,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,7 +341,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -280,11 +353,13 @@
 		};
 		3621773B22B26EAF0047FF5B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB6B6620EA0293EBDFD5D036 /* Pods-buttonSegmented.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NQ9EJGE9J9;
 				INFOPLIST_FILE = buttonSegmented/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +373,13 @@
 		};
 		3621773C22B26EAF0047FF5B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72B3D13DFADFAD0E147E04BA /* Pods-buttonSegmented.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NQ9EJGE9J9;
 				INFOPLIST_FILE = buttonSegmented/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

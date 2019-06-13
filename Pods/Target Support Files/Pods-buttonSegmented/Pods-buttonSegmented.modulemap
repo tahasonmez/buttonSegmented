@@ -1,0 +1,6 @@
+framework module Pods_buttonSegmented {
+  umbrella header "Pods-buttonSegmented-umbrella.h"
+
+  export *
+  module * { export * }
+}
